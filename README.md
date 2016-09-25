@@ -2,14 +2,16 @@
 
 ## How to run
 	1. To start, open the terminal of your system.
+	
+	2. To clone the file directory onto your system, please write git clone https://github.com/albertjennette/assignment2.git /albertjennette
+	
+	3. Because this program accesses the shadow file of your system, it must be run as a super user. Either login through sudo su or simply type sudo in the same line of the executable command.
 
-	2. Because this program accesses the shadow file of your system, it must be run as a super user. Either login through sudo su or simply type sudo in the same line of the executable command.
+	4. This program accepts two arguments. In order to execute a python file the command is python <filename.py>, followed by any arguments. The argument order for this program is the file directory and then the specific user, so an example would resemble python <filename.py> <file or directory> <user>.
 
-	3. This program accepts two arguments. In order to execute a python file the command is python <filename.py>, followed by any arguments. The argument order for this program is the file directory and then the specific user, so an example would resemble python <filename.py> <file or directory> <user>.
+	5. After following these steps your command line prompt should be python assignment2.py <shadow file or directory location> <user> or sudo python assignment2.py <shadow file or directory location> <user> if you have not already enabled root access. 
 
-	4. After following these steps your command line prompt should be python assignment2.py <shadow file or directory location> <user> or sudo python assignment2.py <shadow file or directory location> <user> if you have not already enabled root access. 
-
-	5. Hit enter to execute.
+	6. Hit enter to execute.
 
 ## Purpose of this progam
 	The purpose of this program is very straightforward. It implements a dictionary style password cracking attack to break a specific user's password hash retrieved from a given shadow file.
